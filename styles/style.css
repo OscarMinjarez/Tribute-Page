@@ -3,7 +3,6 @@
 :root {
   --color1: #87085F;
   --color2: #F4F5F6;
-  --color3: #6C3483;
 }
 
 * {
@@ -37,15 +36,15 @@ body {
 /* Inicio de sección 1 */
 
 .section-1 {
-  max-width: 600px;
+  max-width: 650px;
   margin: auto;
 }
 
 .section-1__container {
   height: 100%;
-  background: var(--color3);
+  background: var(--color1);
   text-align: justify;
-  font-size: .7em;
+  font-size: 1em;
   font-weight: 500;
 }
 
@@ -66,37 +65,39 @@ body {
 .section-2 {
   padding: 2em 1em .5em 1em;
   text-align: justify;
+  max-width: 600px;
+  margin: auto;
 }
 
 .section-2__h2 {
-  color: var(--color3);
+  color: var(--color1);
   font-size: 1.2em;
 }
 
 .section-2__p {
-  padding-top: 1em;
+  padding-top: 2em;
 }
 
-.section-2__timeline {
+.section-3 {
+  margin: auto;
+}
+
+.section-3__timeline {
   font-size: .8em;
   padding-top: 4em;
 }
 
-.section-2__timeline-table {
-  border: solid 1px #6C3483;
-}
-
-.section-2__timeline-table .title {
+.section-3__timeline-table .title {
   padding: .5em;
   text-align: center;
   font-size: 1.5em;
 }
 
-.section-2__timeline-table .date, .info {
+.section-3__timeline-table .date, .info {
   padding: .5em;
 }
 
-.section-2__timeline-table .info {
+.section-3__timeline-table .info {
   font-weight: 400;
   padding: 1em .5em 1em 1em;
   width: 70%;
@@ -112,7 +113,7 @@ body {
 }
 
 .footer__container {
-  height: 6em;
+  height: 100%;
   background: var(--color1);
   color: var(--color2);
 }
@@ -139,3 +140,63 @@ body {
 }
 
 /* Fin de footer */
+
+/* Inicio de media querys */
+
+@media (min-width: 550px) {
+
+  /* Inicio de sección 1 */
+
+  .section-1 {
+    border: 10px solid var(--color1);
+    border-radius: 30px;
+  }
+
+  .section-1__container {
+    padding: 1em;
+    text-align: center;
+  }
+
+  .section-1__container-img {
+    border-radius: 25px;
+  }
+
+  .section-1__container-p {
+    font-size: 1.2em;
+  }
+
+  /* Fin de sección 1 */
+
+  /* Inicio de sección 3 */
+
+  .section-3__timeline {
+    max-width: 700px;
+  }
+
+  .section-3__timeline-table {
+    font-size: 1.3em;
+  }
+
+  .section-3__timeline-table .date {
+    text-align: center;
+  }
+
+  .section-3__timeline-table .info {
+    padding-right: 3em;
+  }
+
+  /* Fin de sección 3 */
+}
+
+@media (min-width: 400px) {
+  
+  .section-2__h2 {
+    font-size: 1.5em;
+  }
+  
+  .section-2__p {
+    font-size: 1.2em;
+  }
+}
+
+/* Fin de media querys */
