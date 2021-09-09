@@ -103,3 +103,39 @@ body {
 }
 
 /* Fin de sección 2 */
+
+/* Inicio de footer */
+
+.footer {
+  padding-top: 3em;
+  text-align: center;
+}
+
+.footer__container {
+  height: 6em;
+  background: var(--color1);
+  color: var(--color2);
+}
+
+.footer__h3, .footer__contact-container, .footer__contact-container a, i{
+  background: none;
+}
+
+.footer__h3 {
+  font-size: .8em;
+  padding-top: 2em;
+}
+
+.footer__contact-container a {
+  font-size: 2em;
+  text-decoration: none;
+  color: var(--color2);
+  transition: all .5s;
+}
+
+.footer__contact-container a:hover {
+  font-size: 2.2em;
+  transition: all .5s;
+}
+
+/* Fin de footer */
